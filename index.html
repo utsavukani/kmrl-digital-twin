@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMRL Digital Twin - Control Center</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>KMRL Digital Twin</h1>
+                <span class="subtitle">Kochi Metro Rail Limited - Control Center</span>
+            </div>
+            <div class="system-status">
+                <div class="status-indicator active">
+                    <span class="status-dot"></span>
+                    System Active
+                </div>
+                <div class="current-time" id="currentTime"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <button class="nav-btn active" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" data-view="route-map">Route Map</button>
+        <button class="nav-btn" data-view="train-fleet">Train Fleet</button>
+        <button class="nav-btn" data-view="depot">Depot</button>
+        <button class="nav-btn" data-view="maintenance">Maintenance</button>
+        <button class="nav-btn" data-view="simulation">What-If Simulation</button>
+        <button class="nav-btn" data-view="analytics">Analytics</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Dashboard View -->
+        <section class="view active" id="dashboard">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">🚇</div>
+                    <div class="metric-content">
+                        <div class="metric-value" id="totalTrains">25</div>
+                        <div class="metric-label">Total Trains</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">⚡</div>
+                    <div class="metric-content">
+                        <div class="metric-value" id="activeTrains">18</div>
+                        <div class="metric-label">Active Trains</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">👥</div>
+                    <div class="metric-content">
+                        <div class="metric-value" id="passengerLoad">22,500</div>
+                        <div class="metric-label">Current Load</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">⏰</div>
+                    <div class="metric-content">
+                        <div class="metric-value" id="punctuality">98.2%</div>
+                        <div class="metric-label">Punctuality</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-section">
+                    <h3>System Overview</h3>
+                    <div class="chart-container" style="position: relative; height: 300px;">
+                        <canvas id="systemOverviewChart"></canvas>
+                    </div>
+                </div>
+                <div class="dashboard-section">
+                    <h3>Real-time Status</h3>
+                    <div class="status-list" id="statusList"></div>
+                </div>
+                <div class="dashboard-section">
+                    <h3>Weather Conditions</h3>
+                    <div class="weather-info" id="weatherInfo"></div>
+                </div>
+                <div class="dashboard-section">
+                    <h3>Recent Incidents</h3>
+                    <div class="incidents-list" id="incidentsList"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Route Map View -->
+        <section class="view" id="route-map">
+            <div class="route-container">
+                <h2>KMRL Route Map - Aluva to Tripunithura</h2>
+                <div class="route-controls">
+                    <button class="btn btn--secondary" id="zoomIn">Zoom In</button>
+                    <button class="btn btn--secondary" id="zoomOut">Zoom Out</button>
+                    <button class="btn btn--secondary" id="resetView">Reset View</button>
+                </div>
+                <div class="route-map" id="routeMap">
+                    <div class="route-line"></div>
+                    <div class="stations-container" id="stationsContainer"></div>
+                    <div class="trains-container" id="trainsContainer"></div>
+                </div>
+                <div class="station-details" id="stationDetails"></div>
+            </div>
+        </section>
+
+        <!-- Train Fleet View -->
+        <section class="view" id="train-fleet">
+            <div class="fleet-header">
+                <h2>Train Fleet Management</h2>
+                <div class="fleet-controls">
+                    <select class="form-control" id="fleetFilter">
+                        <option value="all">All Trains</option>
+                        <option value="in_service">In Service</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="standby">Standby</option>
+                    </select>
+                    <button class="btn btn--primary" id="refreshFleet">Refresh</button>
+                </div>
+            </div>
+            <div class="fleet-grid" id="fleetGrid"></div>
+            <div class="train-details-modal modal hidden" id="trainDetailsModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="trainModalTitle">Train Details</h3>
+                        <button class="modal-close" id="closeTrainModal">&times;</button>
+                    </div>
+                    <div class="modal-body" id="trainModalBody"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depot View -->
+        <section class="view" id="depot">
+            <div class="depot-header">
+                <h2>Muttom Depot Operations</h2>
+            </div>
+            <div class="depot-grid">
+                <div class="depot-section">
+                    <h3>Capacity Overview</h3>
+                    <div class="chart-container" style="position: relative; height: 250px;">
+                        <canvas id="depotCapacityChart"></canvas>
+                    </div>
+                </div>
+                <div class="depot-section">
+                    <h3>Bay Utilization</h3>
+                    <div class="bay-layout" id="bayLayout"></div>
+                </div>
+                <div class="depot-section">
+                    <h3>Staff Information</h3>
+                    <div class="staff-info" id="staffInfo"></div>
+                </div>
+                <div class="depot-section">
+                    <h3>Current Operations</h3>
+                    <div class="operations-list" id="operationsList"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance View -->
+        <section class="view" id="maintenance">
+            <div class="maintenance-header">
+                <h2>Maintenance Dashboard</h2>
+            </div>
+            <div class="maintenance-grid">
+                <div class="maintenance-section">
+                    <h3>Upcoming Maintenance</h3>
+                    <div class="maintenance-schedule" id="maintenanceSchedule"></div>
+                </div>
+                <div class="maintenance-section">
+                    <h3>Priority Queue</h3>
+                    <div class="priority-queue" id="priorityQueue"></div>
+                </div>
+                <div class="maintenance-section">
+                    <h3>Crew Assignments</h3>
+                    <div class="crew-assignments" id="crewAssignments"></div>
+                </div>
+                <div class="maintenance-section">
+                    <h3>Health Trends</h3>
+                    <div class="chart-container" style="position: relative; height: 250px;">
+                        <canvas id="healthTrendsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simulation View -->
+        <section class="view" id="simulation">
+            <div class="simulation-header">
+                <h2>What-If Simulation Center</h2>
+            </div>
+            <div class="simulation-grid">
+                <div class="simulation-controls">
+                    <h3>Scenario Configuration</h3>
+                    <div class="form-group">
+                        <label class="form-label">Scenario Type</label>
+                        <select class="form-control" id="scenarioType">
+                            <option value="train_failure">Train Failure</option>
+                            <option value="maintenance_delay">Maintenance Delay</option>
+                            <option value="station_closure">Station Closure</option>
+                            <option value="weather_impact">Weather Impact</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Affected Asset</label>
+                        <select class="form-control" id="affectedAsset"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Duration (minutes)</label>
+                        <input type="number" class="form-control" id="scenarioDuration" value="30" min="5" max="300">
+                    </div>
+                    <button class="btn btn--primary" id="runSimulation">Run Simulation</button>
+                    <button class="btn btn--secondary" id="resetSimulation">Reset</button>
+                </div>
+                <div class="simulation-results" id="simulationResults">
+                    <h3>Impact Analysis</h3>
+                    <div class="results-content" id="resultsContent">
+                        <p>Configure and run a simulation to see impact analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analytics View -->
+        <section class="view" id="analytics">
+            <div class="analytics-header">
+                <h2>Real-time Analytics</h2>
+            </div>
+            <div class="analytics-grid">
+                <div class="analytics-section">
+                    <h3>Passenger Flow</h3>
+                    <div class="chart-container" style="position: relative; height: 250px;">
+                        <canvas id="passengerFlowChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-section">
+                    <h3>Service Frequency</h3>
+                    <div class="chart-container" style="position: relative; height: 250px;">
+                        <canvas id="serviceFrequencyChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-section">
+                    <h3>Punctuality Tracking</h3>
+                    <div class="chart-container" style="position: relative; height: 250px;">
+                        <canvas id="punctualityChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-section">
+                    <h3>KPIs Dashboard</h3>
+                    <div class="kpi-list" id="kpiList"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

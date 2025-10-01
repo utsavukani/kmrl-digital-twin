@@ -1,0 +1,1281 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2025-10-01T10:01:42.913108",
+    "system": "KMRL Digital Twin",
+    "coverage": "Phase 1 - Aluva to Tripunithura",
+    "total_length_km": 27.96
+  },
+  "infrastructure": {
+    "stations": [
+      {
+        "id": 1,
+        "name": "Aluva",
+        "code": "ALV",
+        "chainage": 0.098,
+        "lat": 10.1098,
+        "lon": 76.3496,
+        "type": "terminal",
+        "height": 12.5
+      },
+      {
+        "id": 2,
+        "name": "Pulinchodu",
+        "code": "PLN",
+        "chainage": 1.827,
+        "lat": 10.09512,
+        "lon": 76.346661,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 3,
+        "name": "Companypady",
+        "code": "CMP",
+        "chainage": 2.796,
+        "lat": 10.087293,
+        "lon": 76.34284,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 4,
+        "name": "Ambattukavu",
+        "code": "AMB",
+        "chainage": 3.779,
+        "lat": 10.079372,
+        "lon": 76.339004,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 5,
+        "name": "Muttom",
+        "code": "MUT",
+        "chainage": 4.716,
+        "lat": 10.0727,
+        "lon": 76.3337,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 6,
+        "name": "Kalamassery",
+        "code": "KLM",
+        "chainage": 6.768,
+        "lat": 10.0584,
+        "lon": 76.321926,
+        "type": "interchange",
+        "height": 12.5
+      },
+      {
+        "id": 7,
+        "name": "Cochin University",
+        "code": "CUSAT",
+        "chainage": 8.147,
+        "lat": 10.046879,
+        "lon": 76.318377,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 8,
+        "name": "Pathadipalam",
+        "code": "PTH",
+        "chainage": 9.394,
+        "lat": 10.035948,
+        "lon": 76.314371,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 9,
+        "name": "Edapally",
+        "code": "EDP",
+        "chainage": 10.787,
+        "lat": 10.0266556,
+        "lon": 76.3092583,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 10,
+        "name": "Changampuzha Park",
+        "code": "CHP",
+        "chainage": 12.023,
+        "lat": 10.02,
+        "lon": 76.3,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 11,
+        "name": "Palarivattom",
+        "code": "PLR",
+        "chainage": 13.071,
+        "lat": 10.015,
+        "lon": 76.295,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 12,
+        "name": "JLN Stadium",
+        "code": "JLN",
+        "chainage": 14.126,
+        "lat": 10.01,
+        "lon": 76.29,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 13,
+        "name": "Kaloor",
+        "code": "KLR",
+        "chainage": 15.221,
+        "lat": 10.005,
+        "lon": 76.285,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 14,
+        "name": "Town Hall",
+        "code": "TNH",
+        "chainage": 15.711,
+        "lat": 10.0,
+        "lon": 76.28,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 15,
+        "name": "M.G Road",
+        "code": "MGR",
+        "chainage": 16.899,
+        "lat": 9.995,
+        "lon": 76.275,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 16,
+        "name": "Maharaja's College",
+        "code": "MJC",
+        "chainage": 18.103,
+        "lat": 9.99,
+        "lon": 76.27,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 17,
+        "name": "Ernakulam South",
+        "code": "EKS",
+        "chainage": 19.332,
+        "lat": 9.985,
+        "lon": 76.265,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 18,
+        "name": "Kadavanthra",
+        "code": "KDV",
+        "chainage": 20.185,
+        "lat": 9.98,
+        "lon": 76.26,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 19,
+        "name": "Elamkulam",
+        "code": "ELM",
+        "chainage": 21.341,
+        "lat": 9.975,
+        "lon": 76.255,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 20,
+        "name": "Vyttila",
+        "code": "VYT",
+        "chainage": 22.447,
+        "lat": 9.97,
+        "lon": 76.25,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 21,
+        "name": "Thykoodam",
+        "code": "TKD",
+        "chainage": 23.703,
+        "lat": 9.965,
+        "lon": 76.245,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 22,
+        "name": "Petta",
+        "code": "PET",
+        "chainage": 24.822,
+        "lat": 9.96,
+        "lon": 76.24,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 23,
+        "name": "Vadakkekotta",
+        "code": "VDK",
+        "chainage": 25.5,
+        "lat": 9.955,
+        "lon": 76.235,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 24,
+        "name": "SN Junction",
+        "code": "SNJ",
+        "chainage": 26.5,
+        "lat": 9.95,
+        "lon": 76.23,
+        "type": "intermediate",
+        "height": 12.5
+      },
+      {
+        "id": 25,
+        "name": "Tripunithura",
+        "code": "TRP",
+        "chainage": 27.96,
+        "lat": 9.945,
+        "lon": 76.225,
+        "type": "terminal",
+        "height": 12.5
+      }
+    ],
+    "depots": [
+      {
+        "id": "muttom_depot",
+        "name": "Muttom Depot",
+        "location": {
+          "lat": 10.0727,
+          "lon": 76.3337
+        },
+        "capacity": {
+          "total_tracks": 15,
+          "maintenance_bays": 4,
+          "cleaning_bays": 3,
+          "inspection_bays": 2
+        },
+        "current_occupancy": {
+          "total_trains": 12,
+          "maintenance": 3,
+          "cleaning": 1,
+          "standby": 8
+        },
+        "staff": {
+          "total": 150,
+          "current_shift": 45,
+          "maintenance_crew": 15,
+          "cleaning_crew": 10,
+          "security": 5
+        }
+      }
+    ],
+    "track_specifications": {
+      "gauge": "1435mm (Standard Gauge)",
+      "electrification": "750V DC Third Rail",
+      "signalling": "CBTC (Communication Based Train Control)",
+      "maximum_speed": 80,
+      "minimum_headway": 90
+    }
+  },
+  "rolling_stock": {
+    "trains": [
+      {
+        "id": "KMRL-001",
+        "name": "Train Set 1",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "cleaning",
+        "current_station": 5,
+        "direction": "southbound",
+        "speed": 59,
+        "mileage": 138031,
+        "last_maintenance": "2025-09-28T10:01:42.911939",
+        "fitness_certificate": {
+          "valid_until": "2025-11-04T10:01:42.911961",
+          "rolling_stock": "expired",
+          "signalling": "expired",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": "Coca-Cola",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 90,
+          "braking_system": 91,
+          "hvac_system": 83,
+          "traction_motor": 95,
+          "overall_health": 86
+        }
+      },
+      {
+        "id": "KMRL-002",
+        "name": "Train Set 2",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "standby",
+        "current_station": 13,
+        "direction": "southbound",
+        "speed": 0,
+        "mileage": 74667,
+        "last_maintenance": "2025-09-11T10:01:42.911998",
+        "fitness_certificate": {
+          "valid_until": "2025-12-09T10:01:42.912006",
+          "rolling_stock": "expired",
+          "signalling": "expired",
+          "telecom": "expired"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": null,
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 96,
+          "braking_system": 97,
+          "hvac_system": 90,
+          "traction_motor": 86,
+          "overall_health": 91
+        }
+      },
+      {
+        "id": "KMRL-003",
+        "name": "Train Set 3",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "cleaning",
+        "current_station": 8,
+        "direction": "northbound",
+        "speed": 18,
+        "mileage": 148901,
+        "last_maintenance": "2025-09-15T10:01:42.912038",
+        "fitness_certificate": {
+          "valid_until": "2025-12-21T10:01:42.912044",
+          "rolling_stock": "pending",
+          "signalling": "expired",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Coca-Cola",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 94,
+          "braking_system": 92,
+          "hvac_system": 86,
+          "traction_motor": 85,
+          "overall_health": 88
+        }
+      },
+      {
+        "id": "KMRL-004",
+        "name": "Train Set 4",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "standby",
+        "current_station": 7,
+        "direction": "southbound",
+        "speed": 76,
+        "mileage": 194840,
+        "last_maintenance": "2025-09-26T10:01:42.912071",
+        "fitness_certificate": {
+          "valid_until": "2025-10-31T10:01:42.912077",
+          "rolling_stock": "pending",
+          "signalling": "pending",
+          "telecom": "valid"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Kerala Tourism",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 94,
+          "braking_system": 97,
+          "hvac_system": 93,
+          "traction_motor": 92,
+          "overall_health": 91
+        }
+      },
+      {
+        "id": "KMRL-005",
+        "name": "Train Set 5",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "standby",
+        "current_station": 2,
+        "direction": "southbound",
+        "speed": 44,
+        "mileage": 125760,
+        "last_maintenance": "2025-09-14T10:01:42.912104",
+        "fitness_certificate": {
+          "valid_until": "2025-11-29T10:01:42.912111",
+          "rolling_stock": "pending",
+          "signalling": "expired",
+          "telecom": "expired"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": "Samsung",
+          "contract_hours_remaining": 99
+        },
+        "health_metrics": {
+          "door_system": 87,
+          "braking_system": 96,
+          "hvac_system": 88,
+          "traction_motor": 93,
+          "overall_health": 90
+        }
+      },
+      {
+        "id": "KMRL-006",
+        "name": "Train Set 6",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "cleaning",
+        "current_station": 7,
+        "direction": "northbound",
+        "speed": 12,
+        "mileage": 92447,
+        "last_maintenance": "2025-09-01T10:01:42.912139",
+        "fitness_certificate": {
+          "valid_until": "2025-12-08T10:01:42.912145",
+          "rolling_stock": "expired",
+          "signalling": "expired",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Samsung",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 86,
+          "braking_system": 92,
+          "hvac_system": 84,
+          "traction_motor": 86,
+          "overall_health": 96
+        }
+      },
+      {
+        "id": "KMRL-007",
+        "name": "Train Set 7",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "maintenance",
+        "current_station": 13,
+        "direction": "southbound",
+        "speed": 31,
+        "mileage": 129005,
+        "last_maintenance": "2025-09-05T10:01:42.912171",
+        "fitness_certificate": {
+          "valid_until": "2025-11-01T10:01:42.912178",
+          "rolling_stock": "pending",
+          "signalling": "valid",
+          "telecom": "expired"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Kerala Tourism",
+          "contract_hours_remaining": 99
+        },
+        "health_metrics": {
+          "door_system": 87,
+          "braking_system": 90,
+          "hvac_system": 83,
+          "traction_motor": 98,
+          "overall_health": 88
+        }
+      },
+      {
+        "id": "KMRL-008",
+        "name": "Train Set 8",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "cleaning",
+        "current_station": 4,
+        "direction": "southbound",
+        "speed": 22,
+        "mileage": 131046,
+        "last_maintenance": "2025-09-15T10:01:42.912207",
+        "fitness_certificate": {
+          "valid_until": "2025-12-27T10:01:42.912213",
+          "rolling_stock": "expired",
+          "signalling": "pending",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": "Coca-Cola",
+          "contract_hours_remaining": 52
+        },
+        "health_metrics": {
+          "door_system": 99,
+          "braking_system": 93,
+          "hvac_system": 100,
+          "traction_motor": 87,
+          "overall_health": 97
+        }
+      },
+      {
+        "id": "KMRL-009",
+        "name": "Train Set 9",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "maintenance",
+        "current_station": 17,
+        "direction": "southbound",
+        "speed": 38,
+        "mileage": 155922,
+        "last_maintenance": "2025-09-21T10:01:42.912240",
+        "fitness_certificate": {
+          "valid_until": "2025-12-22T10:01:42.912246",
+          "rolling_stock": "valid",
+          "signalling": "pending",
+          "telecom": "expired"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Coca-Cola",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 88,
+          "braking_system": 95,
+          "hvac_system": 91,
+          "traction_motor": 89,
+          "overall_health": 92
+        }
+      },
+      {
+        "id": "KMRL-010",
+        "name": "Train Set 10",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "standby",
+        "current_station": 1,
+        "direction": "northbound",
+        "speed": 28,
+        "mileage": 187966,
+        "last_maintenance": "2025-09-11T10:01:42.912272",
+        "fitness_certificate": {
+          "valid_until": "2025-11-09T10:01:42.912278",
+          "rolling_stock": "expired",
+          "signalling": "expired",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Samsung",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 85,
+          "braking_system": 91,
+          "hvac_system": 89,
+          "traction_motor": 99,
+          "overall_health": 91
+        }
+      },
+      {
+        "id": "KMRL-011",
+        "name": "Train Set 11",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "cleaning",
+        "current_station": 23,
+        "direction": "northbound",
+        "speed": 10,
+        "mileage": 57725,
+        "last_maintenance": "2025-09-29T10:01:42.912304",
+        "fitness_certificate": {
+          "valid_until": "2025-12-08T10:01:42.912317",
+          "rolling_stock": "valid",
+          "signalling": "expired",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": null,
+          "contract_hours_remaining": 29
+        },
+        "health_metrics": {
+          "door_system": 91,
+          "braking_system": 98,
+          "hvac_system": 91,
+          "traction_motor": 85,
+          "overall_health": 97
+        }
+      },
+      {
+        "id": "KMRL-012",
+        "name": "Train Set 12",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "standby",
+        "current_station": 17,
+        "direction": "southbound",
+        "speed": 6,
+        "mileage": 174620,
+        "last_maintenance": "2025-09-24T10:01:42.912343",
+        "fitness_certificate": {
+          "valid_until": "2025-12-12T10:01:42.912350",
+          "rolling_stock": "valid",
+          "signalling": "expired",
+          "telecom": "valid"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Coca-Cola",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 94,
+          "braking_system": 91,
+          "hvac_system": 86,
+          "traction_motor": 92,
+          "overall_health": 93
+        }
+      },
+      {
+        "id": "KMRL-013",
+        "name": "Train Set 13",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "standby",
+        "current_station": 15,
+        "direction": "northbound",
+        "speed": 26,
+        "mileage": 133771,
+        "last_maintenance": "2025-09-01T10:01:42.912375",
+        "fitness_certificate": {
+          "valid_until": "2025-11-04T10:01:42.912381",
+          "rolling_stock": "pending",
+          "signalling": "expired",
+          "telecom": "valid"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Kerala Tourism",
+          "contract_hours_remaining": 69
+        },
+        "health_metrics": {
+          "door_system": 100,
+          "braking_system": 96,
+          "hvac_system": 88,
+          "traction_motor": 97,
+          "overall_health": 88
+        }
+      },
+      {
+        "id": "KMRL-014",
+        "name": "Train Set 14",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "standby",
+        "current_station": 14,
+        "direction": "southbound",
+        "speed": 39,
+        "mileage": 71082,
+        "last_maintenance": "2025-09-15T10:01:42.912409",
+        "fitness_certificate": {
+          "valid_until": "2025-12-17T10:01:42.912415",
+          "rolling_stock": "expired",
+          "signalling": "pending",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": null,
+          "contract_hours_remaining": 1
+        },
+        "health_metrics": {
+          "door_system": 87,
+          "braking_system": 93,
+          "hvac_system": 96,
+          "traction_motor": 92,
+          "overall_health": 89
+        }
+      },
+      {
+        "id": "KMRL-015",
+        "name": "Train Set 15",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "cleaning",
+        "current_station": 8,
+        "direction": "southbound",
+        "speed": 20,
+        "mileage": 146694,
+        "last_maintenance": "2025-09-12T10:01:42.912443",
+        "fitness_certificate": {
+          "valid_until": "2025-12-02T10:01:42.912449",
+          "rolling_stock": "expired",
+          "signalling": "valid",
+          "telecom": "expired"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": null,
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 91,
+          "braking_system": 91,
+          "hvac_system": 91,
+          "traction_motor": 95,
+          "overall_health": 96
+        }
+      },
+      {
+        "id": "KMRL-016",
+        "name": "Train Set 16",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "standby",
+        "current_station": 22,
+        "direction": "northbound",
+        "speed": 75,
+        "mileage": 168118,
+        "last_maintenance": "2025-09-26T10:01:42.912474",
+        "fitness_certificate": {
+          "valid_until": "2025-12-25T10:01:42.912480",
+          "rolling_stock": "expired",
+          "signalling": "pending",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Kerala Tourism",
+          "contract_hours_remaining": 13
+        },
+        "health_metrics": {
+          "door_system": 88,
+          "braking_system": 92,
+          "hvac_system": 97,
+          "traction_motor": 99,
+          "overall_health": 95
+        }
+      },
+      {
+        "id": "KMRL-017",
+        "name": "Train Set 17",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "cleaning",
+        "current_station": 25,
+        "direction": "southbound",
+        "speed": 35,
+        "mileage": 161431,
+        "last_maintenance": "2025-09-12T10:01:42.912506",
+        "fitness_certificate": {
+          "valid_until": "2025-11-15T10:01:42.912512",
+          "rolling_stock": "expired",
+          "signalling": "pending",
+          "telecom": "valid"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": "Samsung",
+          "contract_hours_remaining": 69
+        },
+        "health_metrics": {
+          "door_system": 90,
+          "braking_system": 93,
+          "hvac_system": 90,
+          "traction_motor": 85,
+          "overall_health": 87
+        }
+      },
+      {
+        "id": "KMRL-018",
+        "name": "Train Set 18",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "maintenance",
+        "current_station": 2,
+        "direction": "northbound",
+        "speed": 46,
+        "mileage": 98430,
+        "last_maintenance": "2025-09-29T10:01:42.912539",
+        "fitness_certificate": {
+          "valid_until": "2025-11-27T10:01:42.912545",
+          "rolling_stock": "valid",
+          "signalling": "pending",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": null,
+          "contract_hours_remaining": 76
+        },
+        "health_metrics": {
+          "door_system": 96,
+          "braking_system": 91,
+          "hvac_system": 86,
+          "traction_motor": 97,
+          "overall_health": 99
+        }
+      },
+      {
+        "id": "KMRL-019",
+        "name": "Train Set 19",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "maintenance",
+        "current_station": 25,
+        "direction": "northbound",
+        "speed": 12,
+        "mileage": 71097,
+        "last_maintenance": "2025-09-08T10:01:42.912571",
+        "fitness_certificate": {
+          "valid_until": "2025-12-04T10:01:42.912575",
+          "rolling_stock": "valid",
+          "signalling": "expired",
+          "telecom": "expired"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": "Kerala Tourism",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 96,
+          "braking_system": 97,
+          "hvac_system": 96,
+          "traction_motor": 98,
+          "overall_health": 97
+        }
+      },
+      {
+        "id": "KMRL-020",
+        "name": "Train Set 20",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "cleaning",
+        "current_station": 12,
+        "direction": "northbound",
+        "speed": 15,
+        "mileage": 68013,
+        "last_maintenance": "2025-09-24T10:01:42.912595",
+        "fitness_certificate": {
+          "valid_until": "2025-12-30T10:01:42.912600",
+          "rolling_stock": "expired",
+          "signalling": "expired",
+          "telecom": "expired"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": "Kerala Tourism",
+          "contract_hours_remaining": 20
+        },
+        "health_metrics": {
+          "door_system": 98,
+          "braking_system": 96,
+          "hvac_system": 99,
+          "traction_motor": 90,
+          "overall_health": 94
+        }
+      },
+      {
+        "id": "KMRL-021",
+        "name": "Train Set 21",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "maintenance",
+        "current_station": 11,
+        "direction": "northbound",
+        "speed": 7,
+        "mileage": 172141,
+        "last_maintenance": "2025-09-22T10:01:42.912621",
+        "fitness_certificate": {
+          "valid_until": "2025-12-15T10:01:42.912626",
+          "rolling_stock": "pending",
+          "signalling": "pending",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": "Kerala Tourism",
+          "contract_hours_remaining": 16
+        },
+        "health_metrics": {
+          "door_system": 96,
+          "braking_system": 97,
+          "hvac_system": 94,
+          "traction_motor": 98,
+          "overall_health": 97
+        }
+      },
+      {
+        "id": "KMRL-022",
+        "name": "Train Set 22",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "maintenance",
+        "current_station": 18,
+        "direction": "northbound",
+        "speed": 55,
+        "mileage": 195028,
+        "last_maintenance": "2025-09-09T10:01:42.912651",
+        "fitness_certificate": {
+          "valid_until": "2025-12-22T10:01:42.912655",
+          "rolling_stock": "valid",
+          "signalling": "pending",
+          "telecom": "valid"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": null,
+          "contract_hours_remaining": 54
+        },
+        "health_metrics": {
+          "door_system": 85,
+          "braking_system": 96,
+          "hvac_system": 82,
+          "traction_motor": 88,
+          "overall_health": 98
+        }
+      },
+      {
+        "id": "KMRL-023",
+        "name": "Train Set 23",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "in_service",
+        "current_station": 23,
+        "direction": "northbound",
+        "speed": 38,
+        "mileage": 110826,
+        "last_maintenance": "2025-09-12T10:01:42.912685",
+        "fitness_certificate": {
+          "valid_until": "2025-12-20T10:01:42.912690",
+          "rolling_stock": "expired",
+          "signalling": "expired",
+          "telecom": "valid"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": "Kerala Tourism",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 96,
+          "braking_system": 99,
+          "hvac_system": 85,
+          "traction_motor": 92,
+          "overall_health": 99
+        }
+      },
+      {
+        "id": "KMRL-024",
+        "name": "Train Set 24",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "in_service",
+        "current_station": 5,
+        "direction": "northbound",
+        "speed": 58,
+        "mileage": 89693,
+        "last_maintenance": "2025-09-17T10:01:42.912708",
+        "fitness_certificate": {
+          "valid_until": "2025-12-19T10:01:42.912713",
+          "rolling_stock": "pending",
+          "signalling": "expired",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": false,
+          "advertiser": null,
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 97,
+          "braking_system": 93,
+          "hvac_system": 96,
+          "traction_motor": 96,
+          "overall_health": 96
+        }
+      },
+      {
+        "id": "KMRL-025",
+        "name": "Train Set 25",
+        "type": "4-car EMU",
+        "capacity": {
+          "seated": 140,
+          "total": 600
+        },
+        "manufacturer": "Alstom",
+        "status": "in_service",
+        "current_station": 20,
+        "direction": "northbound",
+        "speed": 23,
+        "mileage": 128377,
+        "last_maintenance": "2025-09-27T10:01:42.912737",
+        "fitness_certificate": {
+          "valid_until": "2025-12-14T10:01:42.912743",
+          "rolling_stock": "expired",
+          "signalling": "valid",
+          "telecom": "pending"
+        },
+        "branding": {
+          "is_wrapped": true,
+          "advertiser": "Samsung",
+          "contract_hours_remaining": 0
+        },
+        "health_metrics": {
+          "door_system": 85,
+          "braking_system": 97,
+          "hvac_system": 81,
+          "traction_motor": 94,
+          "overall_health": 90
+        }
+      }
+    ],
+    "fleet_stats": {
+      "total_trainsets": 25,
+      "available": 11,
+      "in_maintenance": 6,
+      "average_age": "6 years",
+      "average_mileage": 129025.24
+    }
+  },
+  "operations": {
+    "current_status": {
+      "timestamp": "2025-10-01T10:01:42.913108",
+      "system_status": "operational",
+      "total_trains": 25,
+      "active_trains": 3,
+      "passenger_load": 18249,
+      "daily_ridership": 93981,
+      "service_frequency": "8 minutes",
+      "punctuality": 98.01786621398657,
+      "incidents": 1,
+      "weather": {
+        "condition": "rainy",
+        "temperature": 30,
+        "humidity": 87,
+        "visibility": 12
+      }
+    },
+    "maintenance_schedule": [
+      {
+        "train_id": "KMRL-001",
+        "type": "weekly_maintenance",
+        "scheduled_time": "2025-10-01T16:01:42.913108",
+        "estimated_duration": 4,
+        "priority": "medium",
+        "maintenance_bay": 2,
+        "crew_assigned": "Maintenance Team 1"
+      },
+      {
+        "train_id": "KMRL-002",
+        "type": "daily_inspection",
+        "scheduled_time": "2025-10-02T23:01:42.913108",
+        "estimated_duration": 7,
+        "priority": "medium",
+        "maintenance_bay": 1,
+        "crew_assigned": "Maintenance Team 2"
+      },
+      {
+        "train_id": "KMRL-003",
+        "type": "monthly_overhaul",
+        "scheduled_time": "2025-10-02T21:01:42.913108",
+        "estimated_duration": 3,
+        "priority": "medium",
+        "maintenance_bay": 1,
+        "crew_assigned": "Maintenance Team 4"
+      },
+      {
+        "train_id": "KMRL-004",
+        "type": "monthly_overhaul",
+        "scheduled_time": "2025-10-03T02:01:42.913108",
+        "estimated_duration": 3,
+        "priority": "low",
+        "maintenance_bay": 4,
+        "crew_assigned": "Maintenance Team 5"
+      },
+      {
+        "train_id": "KMRL-005",
+        "type": "daily_inspection",
+        "scheduled_time": "2025-10-01T23:01:42.913108",
+        "estimated_duration": 7,
+        "priority": "medium",
+        "maintenance_bay": 1,
+        "crew_assigned": "Maintenance Team 1"
+      },
+      {
+        "train_id": "KMRL-006",
+        "type": "daily_inspection",
+        "scheduled_time": "2025-10-03T07:01:42.913108",
+        "estimated_duration": 6,
+        "priority": "high",
+        "maintenance_bay": 1,
+        "crew_assigned": "Maintenance Team 1"
+      },
+      {
+        "train_id": "KMRL-007",
+        "type": "weekly_maintenance",
+        "scheduled_time": "2025-10-02T19:01:42.913108",
+        "estimated_duration": 4,
+        "priority": "low",
+        "maintenance_bay": 1,
+        "crew_assigned": "Maintenance Team 3"
+      },
+      {
+        "train_id": "KMRL-008",
+        "type": "weekly_maintenance",
+        "scheduled_time": "2025-10-01T23:01:42.913108",
+        "estimated_duration": 5,
+        "priority": "high",
+        "maintenance_bay": 1,
+        "crew_assigned": "Maintenance Team 2"
+      },
+      {
+        "train_id": "KMRL-009",
+        "type": "monthly_overhaul",
+        "scheduled_time": "2025-10-01T18:01:42.913108",
+        "estimated_duration": 7,
+        "priority": "medium",
+        "maintenance_bay": 3,
+        "crew_assigned": "Maintenance Team 5"
+      },
+      {
+        "train_id": "KMRL-010",
+        "type": "weekly_maintenance",
+        "scheduled_time": "2025-10-02T19:01:42.913108",
+        "estimated_duration": 4,
+        "priority": "medium",
+        "maintenance_bay": 3,
+        "crew_assigned": "Maintenance Team 5"
+      }
+    ],
+    "service_pattern": {
+      "weekday_frequency": "8 minutes",
+      "weekend_frequency": "10 minutes",
+      "first_train": "06:00",
+      "last_train": "22:30",
+      "peak_hours": [
+        "07:00-09:00",
+        "17:00-19:00"
+      ]
+    }
+  }
+}
